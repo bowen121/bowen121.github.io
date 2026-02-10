@@ -4,169 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bowen Tan</title>
-    <meta name="description" content="Personal website: bio, projects, and contact." />
-    <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="assets/style.css" />
+    <meta name="description" content="Bowen Tan — personal page." />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="#top">Bowen Tan</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Writing</a>
-          <a href="#contact">Contact</a>
-          <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">☾</button>
-        </div>
-      </nav>
-    </header>
+    <main class="wrap">
+      <header class="head">
+        <h1>Bowen Tan</h1>
+        <p class="sub">NYU · Math & Computer Science · Robotics / ML</p>
+      </header>
 
-    <main id="top" class="container">
-      <section class="hero">
-        <div class="hero-left">
-          <p class="eyebrow">Hi, I’m</p>
-          <h1>Bowen Tan</h1>
-          <p class="subtitle">
-            NYU Math & CS • Robot Learning • 
-          </p>
-          <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Contact</a>
-            <a class="btn ghost" href="assets/YourName-CV.pdf" target="_blank" rel="noreferrer">
-              CV
-            </a>
-          </div>
-          <div class="quick-links">
-            <a href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:bt2393@nyu.edu">Email</a>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="card">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <p class="card-title">Currently</p>
-              <p class="card-text">
-                Add 2–3 bullets like: research focus, role, or what you’re building.
-              </p>
-              <ul class="bullets">
-                <li>Robotics / AI</li>
-                <li>Math & CS</li>
-                <li>Open to internships / collabs</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <h2>About</h2>
+      <section class="card">
+        <h2>Abstract</h2>
         <p>
-          Write a short bio here. Keep it skimmable. Mention your interests, what you build,
-          and what you’re looking for (research, internships, collaborations).
+          I’m an undergraduate at NYU studying Mathematics and Computer Science, working on robot learning
+          and scalable imitation learning systems. I’m interested in real-world manipulation and all things AI.
         </p>
       </section>
 
-      <section id="projects" class="section">
-        <div class="section-head">
-          <h2>Projects</h2>
-          <div class="filters">
-            <button class="chip active" data-filter="all">All</button>
-            <button class="chip" data-filter="research">Research</button>
-            <button class="chip" data-filter="systems">Systems</button>
-            <button class="chip" data-filter="web">Web</button>
-          </div>
-        </div>
-
-        <div class="grid" id="projectGrid">
-          <!-- Project Card 1 -->
-          <article class="proj-card" data-tags="research">
-            <h3>Project Name</h3>
-            <p class="muted">1–2 lines describing impact + what you did.</p>
-            <div class="pill-row">
-              <span class="pill">PyTorch</span>
-              <span class="pill">Robotics</span>
-              <span class="pill">BC/RL</span>
-            </div>
-            <div class="card-actions">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Paper/Writeup →</a>
-            </div>
-          </article>
-
-          <!-- Project Card 2 -->
-          <article class="proj-card" data-tags="systems">
-            <h3>Another Project</h3>
-            <p class="muted">What problem it solves and what’s unique.</p>
-            <div class="pill-row">
-              <span class="pill">HPC</span>
-              <span class="pill">Slurm</span>
-              <span class="pill">Data</span>
-            </div>
-            <div class="card-actions">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-            </div>
-          </article>
-
-          <!-- Project Card 3 -->
-          <article class="proj-card" data-tags="web">
-            <h3>Website / Tool</h3>
-            <p class="muted">Small tools count — show what you shipped.</p>
-            <div class="pill-row">
-              <span class="pill">HTML</span>
-              <span class="pill">CSS</span>
-              <span class="pill">JS</span>
-            </div>
-            <div class="card-actions">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Live →</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Code →</a>
-            </div>
-          </article>
-        </div>
+      <section class="card">
+        <h2>Links</h2>
+        <ul class="links">
+          <li><a href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:bt2393@nyu.edu">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noreferrer">Google Scholar</a></li>
+          <li><a href="assets/BowenTan-CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
+        </ul>
+        
       </section>
 
-      <section id="publications" class="section">
-        <h2>Writing</h2>
-        <div class="list">
-          <div class="list-item">
-            <div class="list-title">Post / Paper Title</div>
-            <div class="muted">One line summary. <a class="link" href="#">Read →</a></div>
-          </div>
-          <div class="list-item">
-            <div class="list-title">Another Link</div>
-            <div class="muted">Short description. <a class="link" href="#">Read →</a></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Best way to reach me: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
-
-        <form class="contact-card" onsubmit="return false;">
-          <label>
-            <span>Name</span>
-            <input type="text" placeholder="Bowen Tan" />
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea rows="4" placeholder="Your message"></textarea>
-          </label>
-          <p class="muted tiny">
-            This form is a placeholder (GitHub Pages is static). If you want a real form,
-            use Formspree or a simple mailto link.
-          </p>
-        </form>
-      </section>
-
-      <footer class="footer">
-        <p>© <span id="year"></span> Bowen Tan • Built on GitHub Pages</p>
+      <footer class="foot">
+        <span id="y"></span> · <span class="mono">bowen121.github.io</span>
       </footer>
     </main>
 
-    <script src="assets/script.js"></script>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
