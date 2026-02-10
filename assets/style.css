@@ -1,84 +1,171 @@
-:root{
-    --bg: #0b0d12;
-    --card: rgba(255,255,255,0.06);
-    --border: rgba(255,255,255,0.10);
-    --text: #e9eef7;
-    --muted: rgba(233,238,247,0.70);
-    --link: #8ab4ff;
-  }
-  
-  *{ box-sizing: border-box; }
-  html,body{ margin:0; padding:0; }
-  body{
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    background:
-      radial-gradient(900px 600px at 15% 5%, rgba(138,180,255,0.18), transparent 55%),
-      radial-gradient(900px 600px at 90% 20%, rgba(152,86,255,0.14), transparent 55%),
-      var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  
-  .wrap{
-    max-width: 720px;
-    padding: 56px 18px 40px;
-    margin: 0 auto;
-  }
-  
-  .head h1{
-    font-size: 40px;
-    line-height: 1.15;
-    margin: 0 0 8px;
-    letter-spacing: 0.2px;
-  }
-  .sub{
-    margin: 0 0 22px;
-    color: var(--muted);
-  }
-  
-  .card{
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 18px 18px;
-    margin: 12px 0;
-    backdrop-filter: blur(10px);
-  }
-  
-  .card h2{
+:root {
+  --text: #1a1a1a;
+  --text-secondary: #555;
+  --border: #e0e0e0;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 600px;
+  padding: 80px 24px 60px;
+  margin: 0 auto;
+}
+
+/* Header */
+.head {
+  margin-bottom: 48px;
+}
+
+.head h1 {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.affiliation {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-family: 'Inter', -apple-system, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.intro {
+  font-size: 1.15rem;
+  margin-bottom: 1em;
+}
+
+.intro:last-child {
+  margin-bottom: 0;
+}
+
+.section p {
+  color: var(--text);
+}
+
+/* Paper */
+.paper {
+  margin-bottom: 20px;
+}
+
+.paper:last-child {
+  margin-bottom: 0;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.paper-authors {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.paper-links {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.paper-links a {
+  color: var(--text-secondary);
+}
+
+/* Links */
+.links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.links li {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+/* Footer */
+.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  html {
     font-size: 16px;
-    margin: 0 0 10px;
-    letter-spacing: 0.2px;
-    color: var(--muted);
-    text-transform: uppercase;
   }
   
-  .links{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 10px;
+  .wrap {
+    padding: 48px 20px 40px;
   }
-  
-  a{
-    color: var(--link);
-    text-decoration: none;
+
+  .head h1 {
+    font-size: 26px;
   }
-  a:hover{ text-decoration: underline; }
-  
-  .hint{
-    margin: 12px 0 0;
-    color: var(--muted);
-    font-size: 13px;
+
+  .links {
+    flex-direction: column;
+    gap: 12px;
   }
-  
-  .foot{
-    margin-top: 20px;
-    color: var(--muted);
-    font-size: 13px;
-  }
-  .mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-  
+}
+
+/* Selection */
+::selection {
+  background: #1a1a1a;
+  color: #fff;
+}

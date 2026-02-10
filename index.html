@@ -4,44 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bowen Tan</title>
-    <meta name="description" content="Bowen Tan — personal page." />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Bowen Tan — NYU undergraduate studying Math & CS, working on robot learning and AI." />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <main class="wrap">
       <header class="head">
         <h1>Bowen Tan</h1>
-        <p class="sub">NYU · Math & Computer Science · Robotics / ML</p>
+        <p class="affiliation">NYU · Mathematics & Computer Science</p>
       </header>
 
-      <section class="card">
-        <h2>Abstract</h2>
-        <p>
-          I’m an undergraduate at NYU studying Mathematics and Computer Science, working on robot learning
-          and scalable imitation learning systems. I’m interested in real-world manipulation and all things AI.
+      <section class="section">
+        <p class="intro">
+          I'm an undergraduate at New York University studying Mathematics and Computer Science, 
+          advised by <a href="https://www.lerrelpinto.com/" target="_blank" rel="noreferrer">Lerrel Pinto</a>. 
+          My research focuses on robot learning and scalable imitation learning systems, 
+          with particular interest in real-world manipulation and AI.
+        </p>
+        <p class="intro">
+          Feel free to reach out if you'd like to chat or collaborate.
         </p>
       </section>
 
-      <section class="card">
+      <section class="section">
+        <h2>Research Interests</h2>
+        <p>Robot Learning · Imitation Learning · Manipulation · Computer Vision · World Model</p>
+      </section>
+
+      <section class="section">
+        <h2>Research</h2>
+        <div class="paper">
+          <p class="paper-title">Contact-Anchored Policies: Contact Conditioning Creates Strong Robot Utility Models</p>
+          <p class="paper-authors">Zichen Jeff Cui, Omar Rayyan, Haritheja Etukuru, <strong><u>Bowen Tan</u></strong>, Zavier Andrianarivo, Zicheng Teng, Yihang Zhou, Krish Mehta, Nicholas Wojno, Kevin Yuanbo Wu, Manan H Anjaria, Ziyuan Wu, Manrong Mao, Guangxun Zhang, Binit Shah, Yejin Kim, Soumith Chintala, Lerrel Pinto, Nur Muhammad Mahi Shafiullah</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2602.09017" target="_blank" rel="noreferrer">Paper</a> · 
+            <a href="https://github.com/jeffacce/cap-policy" target="_blank" rel="noreferrer">Website</a> · 
+            <a href="https://github.com/NYU-robot-learning/cap-policy" target="_blank" rel="noreferrer">Code</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
         <h2>Links</h2>
         <ul class="links">
           <li><a href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer">LinkedIn</a></li>
           <li><a href="mailto:bt2393@nyu.edu">Email</a></li>
           <li><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noreferrer">Google Scholar</a></li>
-          <li><a href="assets/BowenTan-CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
+          <li><a href="assets/BowenTan-CV.pdf" target="_blank" rel="noreferrer">CV ↗</a></li>
         </ul>
-        
       </section>
 
       <footer class="foot">
-        <span id="y"></span> · <span class="mono">bowen121.github.io</span>
+        <span id="y"></span> Bowen Tan
       </footer>
     </main>
 
     <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
+      document.getElementById("y").textContent = "©" + new Date().getFullYear();
     </script>
   </body>
 </html>
