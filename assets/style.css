@@ -31,7 +31,18 @@ body {
 
 /* Header */
 .head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   margin-bottom: 48px;
+}
+
+.photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .head h1 {
@@ -98,8 +109,7 @@ body {
 }
 
 .paper-links {
-  font-family: 'Inter', -apple-system, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-secondary);
 }
 
@@ -116,7 +126,6 @@ body {
 }
 
 .links li {
-  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 16px;
 }
 
@@ -150,6 +159,16 @@ a:hover {
   
   .wrap {
     padding: 48px 20px 40px;
+  }
+
+  .head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
   }
 
   .head h1 {
