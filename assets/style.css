@@ -203,7 +203,7 @@ body {
 }
 
 .paper-authors strong {
-  color: var(--accent);
+  color: var(--text);
   font-weight: 600;
 }
 
