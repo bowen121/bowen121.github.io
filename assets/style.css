@@ -168,16 +168,18 @@ body {
   color: var(--text);
 }
 
+/* Papers — single-column grid; 1fr rows give every entry the tallest one's height */
+.papers {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 22px;
+}
+
 /* Paper — margin-note rule, brightens on hover */
 .paper {
   padding-left: 18px;
   border-left: 2px solid var(--border-strong);
-  margin-bottom: 22px;
   transition: border-color 0.2s ease;
-}
-
-.paper:last-child {
-  margin-bottom: 0;
 }
 
 .paper:hover {
