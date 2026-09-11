@@ -3,7 +3,7 @@
   --surface: #ffffff;
   --text: #1a1a1a;
   --text-secondary: #585858;
-  --text-tertiary: #8a8a8a;
+  --text-tertiary: #747474;
   --border: #e6e6e3;
   --border-strong: #d4d4cf;
   --accent: #355c9c;
@@ -18,7 +18,7 @@
     --surface: #181818;
     --text: #ededec;
     --text-secondary: #a8a8a6;
-    --text-tertiary: #6f6f6d;
+    --text-tertiary: #868684;
     --border: #2a2a2a;
     --border-strong: #3a3a3a;
     --accent: #93b7eb;
@@ -168,6 +168,11 @@ body {
   color: var(--text);
 }
 
+/* Interests — break between terms, never inside one */
+.interests span {
+  white-space: nowrap;
+}
+
 /* Papers — single-column grid; 1fr rows give every entry the tallest one's height */
 .papers {
   display: grid;
@@ -175,8 +180,11 @@ body {
   gap: 22px;
 }
 
-/* Paper — margin-note rule, brightens on hover */
+/* Paper — margin-note rule, brightens on hover; content centered in the equalized row */
 .paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 18px;
   border-left: 2px solid var(--border-strong);
   transition: border-color 0.2s ease;
@@ -211,6 +219,7 @@ body {
 
 .paper-venue {
   display: inline-block;
+  align-self: flex-start;
   font-family: 'Inter', -apple-system, sans-serif;
   font-size: 10.5px;
   font-weight: 600;
