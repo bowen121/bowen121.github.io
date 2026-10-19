@@ -441,12 +441,6 @@ a:focus-visible {
   padding-left: 10px;
 }
 
-/* Mail and the local CV aren't outbound pages */
-.links a[href^="mailto:"]::after,
-.links a[href$=".pdf"]::after {
-  content: "→";
-}
-
 .links a:hover::after {
   color: var(--accent);
 }
