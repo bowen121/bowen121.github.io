@@ -28,6 +28,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Conventions & gotchas
 
+- `index.html` links the stylesheet as `assets/style.css?v=N`. Bump `N` whenever `style.css` changes, or browsers may pair the new HTML with a cached old stylesheet for up to 10 minutes (GitHub Pages sends `max-age=600`).
 - Keep edits consistent with the editorial style: warm off-white background, hairline dividers, numbered uppercase section labels in the left columns, no cards, shadows, rounded corners, or entrance animations.
 - Publications are `<article class="paper">` blocks inside the Research `<section>` (`.paper-media` with video + Play/Pause button, then `.paper-text`; every clip shows in the same 2:1 frame). Add new papers by copying that markup, bumping the "No. 0X" index, and alternating `paper-flip` so media switches sides. The author's own name is wrapped in `<strong><u>...</u></strong>`.
 - The Google Scholar link in the Links section is a placeholder (`user=YOUR_ID`) and should be updated with the real ID before relying on it.
