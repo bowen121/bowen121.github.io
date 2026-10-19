@@ -496,7 +496,7 @@ a:focus-visible {
     justify-content: flex-end;
   }
 
-  /* Diagonal: name top-right, photo bottom-left, its top level with "Tan" */
+  /* Diagonal: name top-right, photo bottom-left, with clear space between */
   .hero {
     --name-size: min(22vw, 92px);
     display: block;
@@ -523,7 +523,7 @@ a:focus-visible {
     gap: 16px;
     align-items: end;
     max-width: none;
-    margin-top: calc(var(--name-size) * -0.86 + 6px);
+    margin-top: 36px;
   }
 
   .hero-portrait figcaption {
