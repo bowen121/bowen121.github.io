@@ -502,17 +502,24 @@ a:focus-visible {
     justify-content: flex-end;
   }
 
+  /* Diagonal: name top-right, photo bottom-left, its top level with "Tan" */
   .hero {
+    --name-size: min(22vw, 92px);
     display: block;
     padding-top: 48px;
   }
 
   .hero-name {
-    font-size: min(22vw, 92px);
+    font-size: var(--name-size);
+    text-align: right;
+  }
+
+  .hero-name span {
+    padding-right: 0.45em;
   }
 
   .hero-name em {
-    padding-left: 0.5em;
+    padding-left: 0;
   }
 
   .hero-portrait {
@@ -522,7 +529,7 @@ a:focus-visible {
     gap: 16px;
     align-items: end;
     max-width: none;
-    margin-top: 40px;
+    margin-top: calc(var(--name-size) * -0.86 + 6px);
   }
 
   .hero-portrait figcaption {
@@ -561,6 +568,7 @@ a:focus-visible {
     grid-template-columns: 1fr;
     max-width: 180px;
     justify-self: start;
+    margin-top: 32px;
   }
 }
 
