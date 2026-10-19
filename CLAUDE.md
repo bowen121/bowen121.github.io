@@ -8,9 +8,10 @@ A single-page static personal academic website for Bowen Tan, hosted on GitHub P
 
 ## Architecture
 
-- `index.html` — the entire site. All content (intro, research interests, publications, links) lives here as static markup. The only JavaScript is an inline script that injects the current year into the footer.
-- `assets/style.css` — all styling. Plain CSS using custom properties defined in `:root` (`--text`, `--text-secondary`, `--border`, `--bg`) for theming. Two typefaces loaded from Google Fonts: EB Garamond (serif, body) and Inter (sans, headings/labels). Mobile layout handled by a single `@media (max-width: 600px)` block.
-- `assets/` — also holds the profile photo (`IMG_0864.jpg`) and CV (`BowenTan-CV.pdf`), both linked from `index.html`.
+- `index.html` — the entire site. All content (intro, research interests, publications, links) lives here as static markup. The only JavaScript is an inline script that injects the current year into the footer and drives the project videos (play only while on screen, Play/Pause toggle, never autoplay under `prefers-reduced-motion`).
+- `assets/style.css` — all styling. Plain CSS using custom properties defined in `:root` (`--bg`, `--text`, `--text-secondary`, `--border`, `--accent`, `--serif`, `--sans`, …) with a warm dark variant under `prefers-color-scheme: dark`. Two typefaces from Google Fonts: Instrument Serif (display — name, intro, titles, links; it has no bold weight) and Inter (sans — labels, metadata, authors). Layout is a 12-column grid inside a 1240px max width; breakpoints at 900px (tablet) and 640px (single column).
+- `assets/` — also holds the profile photo (`IMG_0864.jpg`, 416×416 — don't render it much larger than ~220px) and CV (`BowenTan-CV.pdf`), both linked from `index.html`.
+- `assets/media/` — one short muted looping clip (`<slug>.mp4`, ~960px wide, ≤ ~1MB) plus a poster frame (`<slug>.jpg`) per paper, trimmed from the paper's project website.
 - `CNAME` — maps the GitHub Pages site to the custom domain `bowen-tan.com`. **Do not delete or rename this file**; removing it breaks the custom domain.
 
 ## Deployment
@@ -27,6 +28,6 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Conventions & gotchas
 
-- Keep edits consistent with the existing minimalist style: serif body text, uppercase letter-spaced section labels, a 600px max content width.
-- Publications are plain `<div class="paper">` blocks inside the Research `<section>`; add new papers by copying that markup. The author's own name is wrapped in `<strong><u>...</u></strong>`.
+- Keep edits consistent with the editorial style: warm off-white background, hairline dividers, numbered uppercase section labels in the left columns, no cards, shadows, rounded corners, or entrance animations.
+- Publications are `<article class="paper">` blocks inside the Research `<section>` (`.paper-media` with video + Play/Pause button, then `.paper-text`; every clip shows in the same 2:1 frame). Add new papers by copying that markup, bumping the "No. 0X" index, and alternating `paper-flip` so media switches sides. The author's own name is wrapped in `<strong><u>...</u></strong>`.
 - The Google Scholar link in the Links section is a placeholder (`user=YOUR_ID`) and should be updated with the real ID before relying on it.

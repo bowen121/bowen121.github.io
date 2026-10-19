@@ -8,8 +8,8 @@
     <link rel="canonical" href="https://bowen-tan.com/" />
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#fcfcfc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
 
     <!-- Social preview -->
     <meta property="og:type" content="website" />
@@ -22,10 +22,10 @@
     <meta name="twitter:description" content="Bowen Tan — NYU undergraduate studying Math & CS, working on robot learning and AI." />
     <meta name="twitter:image" content="https://bowen-tan.com/assets/IMG_0864.jpg" />
 
-    <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
       {
@@ -47,78 +47,144 @@
   </head>
 
   <body>
-    <main class="wrap">
-      <header class="head">
-        <img src="assets/IMG_0864.jpg" alt="Bowen Tan" class="photo" />
-        <div class="head-text">
-          <h1>Bowen Tan</h1>
-          <p class="affiliation">NYU · Honors Mathematics &amp; Computer Science</p>
-          <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to PhD positions · Fall 2027</p>
-        </div>
-      </header>
-
-      <section class="section">
-        <p class="intro">
-          I'm an undergraduate at New York University studying Mathematics and Computer Science, 
-          advised by <a href="https://www.lerrelpinto.com/" target="_blank" rel="noreferrer">Lerrel Pinto</a>. 
-          My research focuses on robot learning and scalable imitation learning systems, 
-          with particular interest in real-world manipulation.
-          I am actively looking for PhD positions starting Fall 2027.
-        </p>
-        <p class="intro">
-          Feel free to reach out if you'd like to chat or collaborate.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2>Research Interests</h2>
-        <p class="interests"><span>Robot Learning</span> · <span>Imitation Learning</span> · <span>Manipulation</span> · <span>Computer Vision</span> · <span>World Model</span></p>
-      </section>
-
-      <section class="section">
-        <h2>Publications</h2>
-        <div class="papers">
-          <div class="paper">
-            <p class="paper-title">Patch Policy: Efficient Embodied Control via Dense Visual Representations</p>
-            <p class="paper-authors">Gaoyue Zhou*, Zichen Jeff Cui*, Ada Langford, <strong><u>Bowen Tan</u></strong>, Yann LeCun, Lerrel Pinto</p>
-            <p class="paper-venue">arXiv preprint, 2026</p>
-            <p class="paper-links">
-              <a href="https://arxiv.org/abs/2607.18236" target="_blank" rel="noreferrer">Paper</a> · 
-              <a href="https://patch-policy.github.io/" target="_blank" rel="noreferrer">Website</a> · 
-              <a href="https://github.com/gaoyuezhou/patch_policy" target="_blank" rel="noreferrer">Code</a>
-            </p>
-          </div>
-          <div class="paper">
-            <p class="paper-title">Contact-Anchored Policies: Contact Conditioning Creates Strong Robot Utility Models</p>
-            <p class="paper-authors">Zichen Jeff Cui, Omar Rayyan, Haritheja Etukuru, <strong><u>Bowen Tan</u></strong>, …, Soumith Chintala, Lerrel Pinto, Nur Muhammad Mahi Shafiullah</p>
-            <p class="paper-venue">RSS 2026</p>
-            <p class="paper-links">
-              <a href="https://arxiv.org/abs/2602.09017" target="_blank" rel="noreferrer">Paper</a> · 
-              <a href="https://cap-policy.github.io/" target="_blank" rel="noreferrer">Website</a> · 
-              <a href="https://github.com/jeffacce/cap-policy" target="_blank" rel="noreferrer">Code</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Links</h2>
-        <ul class="links">
-          <li><a href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer">LinkedIn</a></li>
-          <li><a href="mailto:bt2393@nyu.edu">Email</a></li>
-          <li><a href="https://scholar.google.com/citations?user=etjOJOEAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
-          <li><a href="assets/BowenTan-CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
+    <div class="page" id="top">
+      <nav class="masthead" aria-label="Sections">
+        <span class="masthead-mark">Bowen Tan</span>
+        <ul class="masthead-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Publications</a></li>
+          <li><a href="#links">Links</a></li>
         </ul>
-      </section>
+      </nav>
+
+      <main>
+        <header class="hero">
+          <h1 class="hero-name"><span>Bowen</span> <em>Tan</em></h1>
+          <figure class="hero-portrait">
+            <img src="assets/portrait.jpg" alt="Bowen Tan" class="photo" width="696" height="912" />
+            <figcaption>
+              <p class="affiliation">NYU · Honors Mathematics &amp; Computer Science</p>
+              <p class="status"><span class="status-dot" aria-hidden="true"></span>Open to PhD positions · Fall 2027</p>
+            </figcaption>
+          </figure>
+        </header>
+
+        <section class="section" id="about">
+          <h2 class="label"><span class="label-num" aria-hidden="true">01</span>About</h2>
+          <div class="section-body">
+            <p class="intro">
+              I'm an undergraduate at New York University studying Mathematics and Computer Science,
+              advised by <a href="https://www.lerrelpinto.com/" target="_blank" rel="noreferrer">Lerrel Pinto</a>.
+              My research focuses on robot learning and scalable imitation learning systems,
+              with particular interest in real-world manipulation.
+              I am actively looking for PhD positions starting Fall 2027.
+            </p>
+            <p class="intro intro-aside">
+              Feel free to reach out if you'd like to chat or collaborate.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="label"><span class="label-num" aria-hidden="true">02</span>Research Interests</h2>
+          <div class="section-body">
+            <p class="interests"><span>Robot Learning</span> · <span>Imitation Learning</span> · <span>Manipulation</span> · <span>Computer Vision</span> · <span>World Model</span></p>
+          </div>
+        </section>
+
+        <section class="section section-papers" id="research">
+          <h2 class="label"><span class="label-num" aria-hidden="true">03</span>Publications</h2>
+          <div class="papers">
+            <article class="paper">
+              <div class="paper-media">
+                <a href="https://patch-policy.github.io/" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+                  <video src="assets/media/patch-policy.mp4" poster="assets/media/patch-policy.jpg" muted loop playsinline preload="none"></video>
+                </a>
+                <button type="button" class="media-toggle" aria-label="Play video">Play</button>
+              </div>
+              <div class="paper-text">
+                <p class="paper-index">No. 01</p>
+                <p class="paper-venue">arXiv preprint, 2026</p>
+                <h3 class="paper-title">Patch Policy: Efficient Embodied Control via Dense Visual Representations</h3>
+                <p class="paper-authors">Gaoyue Zhou*, Zichen Jeff Cui*, Ada Langford, <strong><u>Bowen Tan</u></strong>, Yann LeCun, Lerrel Pinto</p>
+                <p class="paper-links">
+                  <a href="https://arxiv.org/abs/2607.18236" target="_blank" rel="noreferrer">Paper</a>
+                  <a href="https://patch-policy.github.io/" target="_blank" rel="noreferrer">Website</a>
+                  <a href="https://github.com/gaoyuezhou/patch_policy" target="_blank" rel="noreferrer">Code</a>
+                </p>
+              </div>
+            </article>
+            <article class="paper paper-flip">
+              <div class="paper-media">
+                <a href="https://cap-policy.github.io/" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+                  <video src="assets/media/cap-policy.mp4" poster="assets/media/cap-policy.jpg" muted loop playsinline preload="none"></video>
+                </a>
+                <button type="button" class="media-toggle" aria-label="Play video">Play</button>
+              </div>
+              <div class="paper-text">
+                <p class="paper-index">No. 02</p>
+                <p class="paper-venue">RSS 2026</p>
+                <h3 class="paper-title">Contact-Anchored Policies: Contact Conditioning Creates Strong Robot Utility Models</h3>
+                <p class="paper-authors">Zichen Jeff Cui, Omar Rayyan, Haritheja Etukuru, <strong><u>Bowen Tan</u></strong>, …, Soumith Chintala, Lerrel Pinto, Nur Muhammad Mahi Shafiullah</p>
+                <p class="paper-links">
+                  <a href="https://arxiv.org/abs/2602.09017" target="_blank" rel="noreferrer">Paper</a>
+                  <a href="https://cap-policy.github.io/" target="_blank" rel="noreferrer">Website</a>
+                  <a href="https://github.com/jeffacce/cap-policy" target="_blank" rel="noreferrer">Code</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="links">
+          <h2 class="label"><span class="label-num" aria-hidden="true">04</span>Links</h2>
+          <div class="section-body section-body-wide">
+            <ul class="links">
+              <li><a href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="mailto:bt2393@nyu.edu">Email</a></li>
+              <li><a href="https://scholar.google.com/citations?user=etjOJOEAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
+              <li><a href="assets/BowenTan-CV.pdf" target="_blank" rel="noreferrer">CV</a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
       <footer class="foot">
-        <span id="y"></span> Bowen Tan
+        <span><span id="y"></span> Bowen Tan</span>
+        <a href="#top" class="foot-top">Top ↑</a>
       </footer>
-    </main>
+    </div>
 
     <script>
       document.getElementById("y").textContent = "©" + new Date().getFullYear();
+      // Project videos: play only while on screen, never under reduced-motion,
+      // and stay paused once the visitor pauses them
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      document.querySelectorAll(".paper-media").forEach(function (media) {
+        var video = media.querySelector("video");
+        var toggle = media.querySelector(".media-toggle");
+        var held = reduceMotion;
+        function sync() {
+          var label = video.paused ? "Play" : "Pause";
+          toggle.textContent = label;
+          toggle.setAttribute("aria-label", label + " video");
+        }
+        video.addEventListener("play", sync);
+        video.addEventListener("pause", sync);
+        toggle.addEventListener("click", function () {
+          held = !video.paused;
+          if (video.paused) video.play().catch(function () {}); else video.pause();
+        });
+        if ("IntersectionObserver" in window) {
+          new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && !held) video.play().catch(function () {});
+              else if (!entry.isIntersecting) video.pause();
+            });
+          }, { threshold: 0.25 }).observe(video);
+        }
+      });
     </script>
   </body>
 </html>
